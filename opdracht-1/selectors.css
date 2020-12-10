@@ -22,15 +22,15 @@ ul li {
 
 /* 1.4 Haal de text-decoration van navigatie-links weg, geef onbezochte links de kleur hsl(359, 79%, 56%) en verander de kleur wanneer de gebruiker er overheen hovert. */
 
-li {
+header a {
     text-decoration: none;
 }
 
-li a {
+header a {
     hsl(359, 79%, 56%)
 }
-li a:hover {
-    color: #000000;
+header a:hover {
+    color: #9966cc;
 }
 
 /* 1.5 Maak een hover- en visited stijl voor alle links in 'main'. */
