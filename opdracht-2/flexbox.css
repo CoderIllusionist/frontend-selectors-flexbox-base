@@ -1,3 +1,63 @@
 /* ======================================================
    OEFENEN MET FLEXBOX
 ========================================================= */
+
+.one {
+    display: flex;
+    flex-direction: column;
+}
+
+.one p {
+    margin-top: auto;
+}
+
+.two {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.two div:last-of-type {
+    margin-left: auto; /*  Move the last div to the end.  */
+}
+
+.three ul, div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none; /* Remove the dots */
+}
+
+.three div:last-of-type {
+    margin-left: auto; /*  Move the last div to the end.  */
+}
+
+.three li {
+    margin-right: 40px;
+}
+
+form, label {
+    display: flex;
+    flex-direction: column;
+    align-self: center; /*  Align all the items inside the container to the center (width)  */
+    justify-content: center; /*  Align all the items inside the container to the center (height)  */
+    margin: auto; /*  Move container to the middle of the page  */
+}
+
+.five {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+@media only screen and (max-width: 1180px) {
+    .five article {
+        max-width: 1180px;
+        flex-basis: 33%;
+        flex-grow: 1;
+    }
+}
+.five article {
+    flex-basis: 30%;
+    flex-grow: 1;
+}
